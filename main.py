@@ -5,7 +5,7 @@ from mingpt.trainer import Trainer, TrainerConfig
 VOCAB_SIZE = 50257
 BLOCK_SIZE = 128
 EPOCHS = 100
-BATCH_SIZE = 64
+BATCH_SIZE = 16
 
 train_dataset = TokenDataset(split='train', block_size=BLOCK_SIZE)
 valid_dataset = TokenDataset(split='valid', block_size=BLOCK_SIZE)
